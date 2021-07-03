@@ -25,9 +25,9 @@ public class StandardException {
     @ExceptionHandler(NumberFormatException.class)
     public ResponseEntity<StandardError> tratativaNumerosInteiros(HttpServletRequest rs){
 
-          StandardError se = new StandardError(HttpStatus.BAD_REQUEST.value(), "Permitido somente valores inteiros", rs.getRequestURI());
+          StandardError s = new StandardError(HttpStatus.BAD_REQUEST.value(), "Permitido somente valores inteiros", rs.getRequestURI());
 
-          return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(se);
+          return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(s);
     }
 
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
