@@ -53,7 +53,7 @@ public class ContatosResource {
             @ApiResponse(code = 200, message = "Realiza a alteração de um produto"),
             @ApiResponse(code = 422, message = "Erro ao enviar alguma propriedade do body"),
             @ApiResponse(code = 404, message = "Id contatos não encontrado"),
-            @ApiResponse(code= 400,  message = "Problema na formatação da url ou conversão de tipo")
+            @ApiResponse(code = 400,  message = "Problema na formatação da url ou conversão de tipo")
     })
     public ResponseEntity<Object> update (@PathVariable("id") Long id, @Valid @RequestBody Contato c, HttpServletRequest rs){
 
@@ -72,7 +72,7 @@ public class ContatosResource {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Realiza a consulta de um contato especifico"),
             @ApiResponse(code = 404, message = "Id contatos não encontrado"),
-            @ApiResponse(code= 400,  message = "Problema na formatação da url ou conversão de tipo")
+            @ApiResponse(code = 400,  message = "Problema na formatação da url ou conversão de tipo")
     })
     public ResponseEntity<Object> getPorId(@Valid @PathVariable("id") Long id, HttpServletRequest rs){
 
@@ -99,7 +99,7 @@ public class ContatosResource {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Realiza a exclusão de um contato"),
             @ApiResponse(code = 404, message = "Id contatos não encontrado"),
-            @ApiResponse(code= 400,  message = "Problema na formatação da url ou conversão de tipo")
+            @ApiResponse(code = 400,  message = "Problema na formatação da url ou conversão de tipo")
     })
     public ResponseEntity delete (@Valid @PathVariable("id") Long id, HttpServletRequest rs){
 

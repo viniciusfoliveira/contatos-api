@@ -1,8 +1,0 @@
-br\com\ibm\contatos\ContatosApplication.class
-br\com\ibm\contatos\services\ContatosService.class
-br\com\ibm\contatos\model\Contato.class
-br\com\ibm\contatos\resource\ContatosResource.class
-br\com\ibm\contatos\resource\exception\StandardException.class
-br\com\ibm\contatos\repository\ContatosRespository.class
-br\com\ibm\contatos\resource\exception\StandardError.class
-br\com\ibm\contatos\config\SwaggerConfig.class
